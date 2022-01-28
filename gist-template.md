@@ -1,8 +1,10 @@
 # Regular Expression
 
-Basically, a regular expression is a pattern describing a certain amount of text. That makes them ideally suited for searching, text processing and data validation.
+Regular expression is a pattern describing a certain amount of text. That makes them ideally suited for searching, text processing and data validation.
 
 ## Summary
+
+- The above pattern matches Password123#, but does not match   Passsword123.
 
 ^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$
 
@@ -27,6 +29,7 @@ This regex will enforce these rules:
 ## Regex Components
 
 ### Anchors
+- (^) Matches the beginning of the string, or the beginning of a line if the multiline flag (m) is enabled. This matches a position, not a character.
 
 ### Quantifiers
 
