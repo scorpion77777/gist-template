@@ -6,7 +6,7 @@ Regular expression is a pattern describing a certain amount of text. That makes 
 
 - The above pattern matches Password123#, but does not match   Passsword123.
 
-^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$
+  ^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$
 
 - This regex will enforce these rules:
 - At least one upper case English letter, (?=.*?[A-Z]).
