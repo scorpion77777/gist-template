@@ -8,7 +8,7 @@ Regular expression is a pattern describing a certain amount of text. That makes 
 
 ^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$
 
-This regex will enforce these rules:
+- This regex will enforce these rules:
 - At least one upper case English letter, (?=.*?[A-Z]).
 - At least one lower case English letter, (?=.*?[a-z]).
 - At least one digit, (?=.*?[0-9]).
@@ -47,6 +47,8 @@ This regex will enforce these rules:
 ### Flags
 
 ### Character Escapes
+
+
 
 ## Author
 
