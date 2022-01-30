@@ -61,6 +61,13 @@ EXAMPLE:
 - Character classes distinguish kinds of characters such as, for      example, distinguishing between letters and digits.
 
 EXAMPLE:
+- let text = "Give 100%!"; 
+let pattern = /\d/g;
+let result = text.match(pattern); // --> 1,0,0
+
+- let text = "Give 100%!"; 
+let pattern = /\D/g;
+let result = text.match(pattern); // --> G,i,v,e, ,%,!  NO digits!
 
 - const chessStory = 'He played the King in a8 and she moved her Queen in c2.';
 const regexpCoordinates = /\w\d/g;
@@ -73,7 +80,10 @@ console.log(chessStory.match(regexpCoordinates));
 
 ### Flags
 
+
+
 ### Character Escapes
+
 
 
 ## Author
