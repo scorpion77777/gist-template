@@ -38,32 +38,42 @@ Regular expression is a pattern describing a certain amount of text. That makes 
 
 ### Grouping Constructs
 
--- Capturing groups create a sub-expression by placing an expression inside matching open and close parentheses. Quantifiers and optionality can be applied to sub-expressions. Each set of parentheses creates a capture number that is used to identify capturing groups, ranging from 1 to 9 (\1 to \9). Capturing groups can be referenced later by their capture number in the regular expression or the replacement string in REGEXP_REPLACE.
+- Capturing groups create a sub-expression by placing an expression inside matching open and close parentheses. Quantifiers and optionality can be applied to sub-expressions. Each set of parentheses creates a capture number that is used to identify capturing groups, ranging from 1 to 9 (\1 to \9). Capturing groups can be referenced later by their capture number in the regular expression or the replacement string in REGEXP_REPLACE.
 Note: While only 9 can be referenced, Yellowbrick supports patterns that contain up to 16 capturing groups. Using more than 16 capturing groups will result in an error.
 Non-capturing groups create a sub-expression without creating a capturing group. Non-capturing groups are indicated by including the question mark ( ? ) and colon ( : ) after the opening parenthesis.
 
 EXAMPLE:
 
--- (\w+)     Sub-expression and noted as a capturing group.
--- (?:\w+)   Sub-expression in the non-capturing group.
+- (\w+)     Sub-expression and noted as a capturing group.
+- (?:\w+)   Sub-expression in the non-capturing group.
 
 ### Bracket Expressions
 
---Brackets indicate a set of characters to match. Any individual character between the brackets will match, and you can also use a hyphen to define a set.
+- Brackets indicate a set of characters to match. Any individual   character between the brackets will match, and you can also use a hyphen to define a set.
 
 EXAMPLE:
 
--- 'elephant'.match(/[abcd]/) // -> matches 'a'
+- 'elephant'.match(/[abcd]/) // -> matches 'a'
 
 
 ### Character Classes
 
+- Character classes distinguish kinds of characters such as, for      example, distinguishing between letters and digits.
+
+EXAMPLE:
+
+const chessStory = 'He played the King in a8 and she moved her Queen in c2.';
+const regexpCoordinates = /\w\d/g;
+console.log(chessStory.match(regexpCoordinates));
+// expected output: Array [ 'a8', 'c2']
+
 ### The OR Operator
+
+
 
 ### Flags
 
 ### Character Escapes
-
 
 
 ## Author
