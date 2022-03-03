@@ -76,11 +76,12 @@ console.log(chessStory.match(regexpCoordinates));
 
 ### The OR Operator
 
+- The OR operator allows you to add same logic inside the bracket expression to the outside. Works best with grouping construct or between two different grouping constructs.
 
 
 ### Flags
 
-
+- Flags are placed at the end of a regex, after the second slash, and they define additional functionality or limits for regex. There are 6 operational flags but the most commonly used ones are as follows:
 
 ### Character Escapes
 
@@ -88,4 +89,4 @@ console.log(chessStory.match(regexpCoordinates));
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+- I'm a student at UCI bootcamp [full stack web development]
