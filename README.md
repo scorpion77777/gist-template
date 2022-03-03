@@ -85,8 +85,10 @@ console.log(chessStory.match(regexpCoordinates));
 
 ### Character Escapes
 
-
+- The backslash in a regular expression precedes a literal character. You also escape certain letters that represent common character classes, such as \w for a word character or \s for a space.
 
 ## Author
 
 - I'm a student at UCI bootcamp [full stack web development]
+
+[MY GIT HUB REPO](https://github.com/scorpion77777)
